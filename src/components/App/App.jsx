@@ -9,6 +9,9 @@ import {
 } from 'components';
 import article from 'data/article.json';
 import data from 'data/data.json';
+import forbes from 'data/forbes.json';
+
+
 export const App = () => {
   return (
     <Section>
@@ -32,7 +35,9 @@ export const App = () => {
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 3
         </Heading>
-        <ForbesList />
+        <ForbesList 
+        list={forbes}
+        />
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 4
         </Heading>
